@@ -1,0 +1,194 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    color: #8B4513;
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding:0 2%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200)
+}
+.logo{
+    color: #8B4513;
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile i{
+    cursor: pointer;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu a{
+    color:#8B4513;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-;
+    margin-right: 20px;
+}
+.menu a:hover{
+    color: #D2691E;
+}
+.menu .btn-menu{
+    background-color:#8B4513;
+    display: inline-block;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.menu .btn-menu:hover{
+    background-color: #D2691E;
+    color: white;
+}
+
+section.main{
+    background-image: url('img/Back.jpg');
+    padding: 70px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+.main-cta h2{
+    color: #D2691E;
+    font-size: 40px;
+}
+
+.main-cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 16px 0;
+}
+.main-cta button{
+    background-color:#8B4513;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.4s;
+    border: 0;
+    cursor: pointer;
+}
+
+.diferencias{
+    display: flex;
+    flex-wrap: wrap;
+}
+.diferencias-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+.diferencias-single h2{
+    color: #8B4513;
+    margin: 10px 0;
+    font-size: 17px ;
+}
+.diferencias-single p{
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+section.sobre{
+    padding: 80px 0;
+}
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+.chamada-sobre h2{
+    text-transform: uppercase;
+}
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+    margin: 0 20px;
+}
+.conteudo-sobre span{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+.conteudo-sobre i{
+    color: #8B4513;
+}
+section.conquistas{
+    background-color: #f8fbfe;
+    padding: 22px 0;
+}
+.conquistas-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: #8B4513;
+}
+.conquistas-single h2{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .diferencias-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 20px 20px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu-mobile{
+        display: block;
+        width: 80%;
+        text-align: right;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .menu{
+        display: none;
+    }
+}
+
